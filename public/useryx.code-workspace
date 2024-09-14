@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../home/useryx"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp"
+		},
+		"C_Cpp.default.compilerPath": "/usr/bin/gcc",
+		"files.watcherExclude": {
+			"**/code/py/venv/**": true,
+			"**/home/useryx/code/py/venv/**": true
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../project"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"condition_variable": "cpp"
+		}
+	}
+}
