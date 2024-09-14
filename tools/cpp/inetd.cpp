@@ -60,19 +60,7 @@ int main(int argc,char *argv[])
     {
         printf("打开日志文件失败（%s）。\n",argv[1]); return -1;
     }
-
-    //pactive.addpinfo(30,"inetd");       // 设置进程的心跳超时间为30秒。
-
-    // 把代理路由参数配置文件加载到vroute容器。
-    if (loadroute(argv[2])==false) return -1;
-
-    logfile.write("加载代理路由参数成功(%d)。\n",vroute.size());
-
-    // 初始化服务端用于监听的socket。
-    for (auto &aa:vroute)
-    {
-        if ( (aa.listensock=initserver(aa.srcport)) < 0 )
-        {
+    
             // 如果某一个socket初始化失败，忽略它。
             logfile.write("initserver(%d) failed.\n",aa.srcport);   continue;
         }
